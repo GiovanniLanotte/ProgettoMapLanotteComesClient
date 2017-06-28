@@ -195,7 +195,11 @@ private class ActionEvent implements ActionListener{
 		}catch(InputException e2){
 			
 		} catch (ClassNotFoundException e3) {
+		}
+		catch(NumberFormatException e4){
+			JOptionPane.showMessageDialog(c, "Errore controllare l'input");
 		}finally {
+		}
 		
 			try {
 				s.close();
@@ -206,5 +210,4 @@ private class ActionEvent implements ActionListener{
 		}
 	}
 	
-}
 }
